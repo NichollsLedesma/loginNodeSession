@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center">
+            <h1>Datos del Profile</h1>
+        </header>
+        <div class="container">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><span class="fa fa-user"></span> Local</h3>
+                        <p>
+                            <strong>id</strong>: <%= user._id %><br>
+                            <strong>email</strong>: <%= user.local.email %><br>
+                            <strong>pass</strong>: <%= user.local.password %>
+                        </p>
+                        <a href="/logout" class="btn btn-default">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
